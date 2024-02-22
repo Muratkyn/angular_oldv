@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from '../app/navbar/navbar.component';
 import { PostComponent } from './post/post.component';
 import { PostlistComponent } from './postlist/postlist.component';
+import { CourseService } from './courses.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { PostlistComponent } from './postlist/postlist.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [CourseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

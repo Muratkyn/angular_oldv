@@ -10,12 +10,11 @@ export class PostComponent implements OnInit {
 
   title: string = "List of Titles";
   courses;
-  postlist1: string = "A postlist to child"
+  postlist1: string = "A postlist to child component"
 
   @Input() message!:string;
   
-  constructor() {
-    let service = new CourseService()
+  constructor(service: CourseService) {
     this.courses = service.getCourses();
   }
 
