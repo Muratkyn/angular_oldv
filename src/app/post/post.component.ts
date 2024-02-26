@@ -12,6 +12,8 @@ export class PostComponent implements OnInit {
   courses;
   postlist1: string = "A postlist to child component"
 
+  childMessage: number = 28
+
   @Input() message!:string;
   
   constructor(service: CourseService) {

@@ -1,4 +1,8 @@
 <h1>Angular App</h1>
-
+<h1>{{message}}</h1>
+<h3 *ngIf="title; else elseBlock">{{title}}</h3>
+<ng-template #elseBlock>
+    <h4>Hi there!</h4>
+</ng-template>
 <app-navbar></app-navbar>
 <app-post [message]= 'parentMessage'></app-post>
